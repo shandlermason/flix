@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [X] List anything else that you can get done to improve the app functionality!
+List anything else that you can get done to improve the app functionality!
 - [X] User can tap a poster in the collection view to see a detail screen of that movie
 - [X] Customize the tab bar
 
