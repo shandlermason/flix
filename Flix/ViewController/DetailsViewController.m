@@ -40,6 +40,10 @@
     
     self.titleLabel.text = self.movie[@"title"];
     self.summaryLabel.text =self.movie[@"overview"];
+    
+    //sizeToFit - adjust label to fit contents of stuff in it now
+    self.titleLabel.sizeToFit;
+    self.summaryLabel.sizeToFit;
 }
 
 /*

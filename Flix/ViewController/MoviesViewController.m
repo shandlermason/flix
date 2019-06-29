@@ -21,12 +21,19 @@
 
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
 @end
 
 @implementation MoviesViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // Start the activity indicator
+    [self.activityIndicator startAnimating];
+    
+    
     
     // Do any additional setup after loading the view.
     //STEP 3 - make view controller data source and delegate
@@ -76,8 +83,12 @@
         }
         
         [self.refreshControl endRefreshing];
+        // Stop the activity indicator
+        // Hides automatically if "Hides When Stopped" is enabled
+        [self.activityIndicator stopAnimating];
     }];
     [task resume];
+    
 }
 
 
