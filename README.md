@@ -47,6 +47,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+
 I had challenges loading the movie posters and connecting the correct class name with the correct cell and view controller.
 
 ## Credits
